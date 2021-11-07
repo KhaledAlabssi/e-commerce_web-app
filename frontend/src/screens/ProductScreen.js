@@ -15,7 +15,7 @@ export default function ProductScreen() {
         }
         fetchProduct();
         
-      }, [])
+      }, [params])
     
     
     return (
