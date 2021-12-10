@@ -5,16 +5,19 @@ import { notFound, errorHandler } from './middleware/errorMiddleware.js';
 import connectDB from './config/db.js';
 
 import productRoutes from './routes/ProductRoutes.js'
+import userRouters from './routes/userRoutes.js'
 
 dotenv.config()
 connectDB()
 const app = express();
+app.use(express.json())
 
 app.get('/', (req, res) => {
     res.send('Backend is running...')
 })
 
 app.use('/api/products', productRoutes);
+app.use('/api/users', userRouters)
 
 app.use(notFound)
 
