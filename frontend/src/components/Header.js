@@ -25,11 +25,11 @@ export default function Header() {
               </Nav>
               <Nav>
                 {/* <Link to='/cart'><i className='fas fa-shopping-cart'></i> Cart</Link> */}
-                <Nav.Link>
+                <Nav.Link href='/cart'>
                   <i className="fas fa-shopping-cart"></i> Cart
                 </Nav.Link>
 
-                <Nav.Link href="/login">
+                <Nav.Link href='/login'>
                   <i className="fas fa-user"></i> Sign In
                 </Nav.Link>
               </Nav>
